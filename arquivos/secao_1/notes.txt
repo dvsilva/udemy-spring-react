@@ -1,0 +1,38 @@
+link da aplicação
+https://minhas-financas-app.herokuapp.com/#/login
+
+link repos
+https://github.com/cursodsousa/minhasfinancas-api
+https://github.com/cursodsousa/minhas-financas-app
+
+mini curso de git
+
+criar um repositório local
+git init
+
+enviar arquivos para o git
+git add .
+
+obter o status dos arquivos do diretório atual
+git status
+
+commmitar modificações
+git commit -m "commit inicial"
+
+criar um repositorio remoto no github
+
+configuração do repositório remoto
+git remote add origin https://github.com/xxxxxx
+
+mostra os repositórios remotos
+git remote -v
+
+enviar commits para o repositório remoto
+git push origin master
+
+baixar projeto
+git clone https://github.com/xxxxxx
+
+atualiza o projeto com os arquivos do repositório remoto
+git pull
+

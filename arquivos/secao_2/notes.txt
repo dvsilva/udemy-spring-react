@@ -1,0 +1,16 @@
+sistema batch - é um sistema que realiza um processamento de uma quantidade finita de dados sem interação ou interrupção
+cobol por exemplo
+accenture gerou boas praticas ocasionou o Spring Batch
+
+preocupações -> tempo, integridade, execução e monitoramento
+escalabilidade, disponibilidade e usabilidade (código)
+
+skipAllBreackPoints - não parar nos breakpoints durante debug
+
+Desenvolvimento com Spring Batch - Overview
+https://medium.com/@giu.drawer/spring-batch-para-desenvolvimento-de-jobs-1674ec5b9a20
+
+Por que você deveria utilizar Spring Batch para processamento batch
+https://medium.com/@giu.drawer/why-you-should-be-using-spring-batch-for-batch-processing-83f5aafb965f
+
+

@@ -1,0 +1,46 @@
+Job - trabalho
+"Coleção de estados e transições de um para o outro definidas por steps" = máquina de estados
+
+JobLauncher -> execução do Job
+Job Repository -> estado do job e seus steps / Metadados do Spring Batch
+Job -> parâmetros de execução
+JobInstance -> execução lógica
+JobExecution -> execução física
+
+Metadados do batch no banco de dados
+
+batch_job_instance -> numero de execuções logicas
+batch_job_execution -> quantas vezes executou mesmo com erros (status)
+batch_job_execution_context -> quais dados foram salvos
+
+batch_step_execution -> dados a respeito dos steps / quais foram executados
+batch_step_execution_context -> quais dados foram salvos
+
+Job não pode ser executado com o mesmo parâmetro para impedir a execução dos mesmos dados
+utilizar incrementer no Job
+sem incrementer deve limpar os metadados
+
+Steps
+Job é uma sequencia encadeada de steps
+Step tem sua propria lógica
+
+Step execution -> execução fisica do step e execução fisica do job
+guarda informações uteis numero de leituras associadas a execução
+monitoramento, analise da execução e reexecução do job
+
+Step pode ser
+Tasklets -> pequenas tarefas / pre processamento
+
+Chunks -> tarefas complexas
+Leitura -> ItemReader
+Processamento -> ItemProcessor
+Escrita -> ItemWriter
+- cada um possui transação permitindo voltar ao ultimo estado pois estará salvo
+
+Mais sobre
+1. Linguagem de domínio do Spring Batch
+https://docs.spring.io/spring-batch/docs/current-SNAPSHOT/reference/html/domain.html
+2. Configuração do Job
+https://medium.com/@giu.drawer/desenvolvimento-com-spring-batch-jobs-b4363dd6c676
+3. Configuração de Step
+https://medium.com/@giu.drawer/desenvolvimento-com-spring-batch-steps-4d42af2696ec
