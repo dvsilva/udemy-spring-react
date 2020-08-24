@@ -1,0 +1,18 @@
+container de injeção de dependencias
+https://docs.spring.io/spring/docs/3.2.x/spring-framework-reference/html/beans.html
+
+teste de integração (repository) - precisa de recursos externos à aplicação
+https://docs.spring.io/spring/docs/current/spring-framework-reference/testing.html#testing-introduction
+
+JUnit -> testes
+mock -> objeto fake para testar comportamento do sistema
+
+adicionar dependencia para trabalhar com rest
+
+<dependency>
+	<groupId>org.springframework.boot</groupId>
+	<artifactId>spring-boot-starter-web</artifactId>
+</dependency>
+
+insomnia
+https://insomnia.rest/download/

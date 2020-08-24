@@ -1,0 +1,57 @@
+{
+	"variables": [],
+	"info": {
+		"name": "MinhasFinancas",
+		"_postman_id": "5666f520-4388-c0fb-3def-7948b5e7bbf7",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "UsuarioResource",
+			"description": "",
+			"item": [
+				{
+					"name": "Salvar Usuario",
+					"request": {
+						"url": "http://localhost:8080/api/usuarios",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"nome\": \"usuario\",\n\t\"email\": \"usuario@email.com\",\n\t\"senha\": \"senha\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Autenticar Usuario",
+					"request": {
+						"url": "http://localhost:8080/api/usuarios/autenticar",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"email\": \"usuario@email.com\",\n\t\"senha\": \"senha\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

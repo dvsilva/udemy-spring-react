@@ -7,21 +7,23 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
 
 @Entity
 @Table(name = "usuario", schema = "financas")
 @Builder
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
 // @Data eh equivalente as seguintes anotacoes
-//@Getter
-//@Setter
-//@EqualsAndHashCode
-//@ToString
-//@NoArgsConstructor
-//@AllArgsConstructor
+// @Getter
+// @Setter
+// @EqualsAndHashCode
+// @ToString
 public class Usuario {
 
 	@Id
