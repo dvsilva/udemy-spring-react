@@ -1,0 +1,9 @@
+git init
+git status
+git add .
+git commit -m "commit inicial"
+git remote add origin https://github.com/xxxxx
+git remote -v
+git push origin master
+
+

@@ -20,7 +20,6 @@ public class UsuarioServiceImpl implements UsuarioService {
 	
 	//@Autowired
 	public UsuarioServiceImpl(UsuarioRepository repository) {
-		super();
 		this.repository = repository;
 	}
 	
@@ -51,6 +50,11 @@ public class UsuarioServiceImpl implements UsuarioService {
 		if(existe) {
 			throw new RegraNegocioException("Já existe um usuário cadastrado com esse email.");
 		}
+	}
+
+	@Override
+	public Optional<Usuario> obterPorId(Long id) {
+		return repository.findById(id);
 	}
 
 }
