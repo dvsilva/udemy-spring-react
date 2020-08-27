@@ -48,7 +48,7 @@ public class UsuarioRepositoryTest {
 	}
 	
 	@Test
-	public void deveRetornarFalsoQuandoNaoHouverusuarioCadastradoComOEmail() {
+	public void deveRetornarFalsoQuandoNaoHouverUsuarioCadastradoComOEmail() {
 		// cenario
 		// repository.deleteAll(); nao precisa com a anotacao @DataJpaTest
 
