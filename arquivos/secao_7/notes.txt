@@ -1,0 +1,21 @@
+React
+- biblioteca open source desenvolvida pelo facebook
+- interfaces gráficas baseadas em componentes
+- cpomponentes encapsulados que gerencie seu proprio estado e combinados criar UIs complexas
+- utilizado para Single Page Applications (SPA)
+- utilizado por grandes empresas
+
+Links
+https://reactjs.org/
+https://reactjs.org/docs/getting-started.html
+https://nodejs.org/en/
+https://classic.yarnpkg.com/en/
+https://create-react-app.dev/
+https://code.visualstudio.com/
+
+npm install -g yarn
+npm install -g create-react-app
+create-react-app minhas-financas-app
+
+nova versão do create-react-app
+npx create-react-app minhas-financas-app
