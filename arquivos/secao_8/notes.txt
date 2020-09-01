@@ -1,0 +1,2 @@
+JSX -> javascript + xml (html)
+rodar -> yarn start
