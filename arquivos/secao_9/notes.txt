@@ -1,0 +1,19 @@
+desenvolvimento do frontend
+
+links uteis:
+https://getbootstrap.com/
+https://bootswatch.com/
+https://github.com/axios/axios
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Promise
+https://codeseven.github.io/toastr/
+https://www.primefaces.org/primereact/
+
+instalar bootswatch
+yarn add bootswatch
+
+instalar react-router-dom
+yarn add react-router-dom
+
+instalar biblioteca para requisições rest (https://github.com/axios/axios)
+yarn add axios
+
