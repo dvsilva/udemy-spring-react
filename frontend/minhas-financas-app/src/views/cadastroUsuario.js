@@ -4,6 +4,9 @@ import { withRouter } from "react-router-dom";
 import Card from "../components/card";
 import FormGroup from "../components/form-group";
 
+import UsuarioService from "../app/service/usuarioService";
+import { mensagemErro, mensagemSucesso } from "../components/toastr";
+
 class CadastroUsuario extends React.Component {
   state = {
     nome: "",
@@ -12,8 +15,36 @@ class CadastroUsuario extends React.Component {
     senhaRepeticao: "",
   };
 
+  constructor() {
+    super();
+    this.service = new UsuarioService();
+  }
+
   cadastrar = () => {
-    console.log(this.state);
+    // console.log(this.state);
+
+    const { nome, email, senha, senhaRepeticao } = this.state;
+    const usuario = { nome, email, senha, senhaRepeticao };
+
+    try {
+      this.service.validar(usuario);
+    } catch (erro) {
+      const mensagens = erro.mensagens;
+      mensagens.forEach((msg) => mensagemErro(msg));
+      return false;
+    }
+
+    this.service
+      .salvar(usuario)
+      .then((response) => {
+        mensagemSucesso(
+          "Usuário cadastrado com sucesso! Faça o login para acessar o sistema"
+        );
+        this.props.history.push("/login");
+      })
+      .catch((error) => {
+        mensagemErro(error.response.data);
+      });
   };
 
   cancelar = () => {
@@ -71,10 +102,10 @@ class CadastroUsuario extends React.Component {
               </FormGroup>
 
               <button className="btn btn-success" onClick={this.cadastrar}>
-                Salvar
+                <i className="pi pi-save"></i> Salvar
               </button>
               <button className="btn btn-danger" onClick={this.cancelar}>
-                Cancelar
+                <i className="pi pi-times"></i> Cancelar
               </button>
             </div>
           </div>

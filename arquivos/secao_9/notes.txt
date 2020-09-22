@@ -17,3 +17,20 @@ yarn add react-router-dom
 instalar biblioteca para requisições rest (https://github.com/axios/axios)
 yarn add axios
 
+localstorage -> acesso só para o frontend
+cookie -> pode ser recuperado pelo backend
+
+adicionar biblioteca para mostrar mensagens para o usuario
+yarn add toastr
+
+ctrl + p -> abrir arquivo diretamente no VSCode
+
+instalar currency formatter para formatar dinheiro
+yarn add currency-formatter
+
+adicionar biblioteca primereact no projeto (https://www.primefaces.org/primereact/)
+yarn add primereact primeicons classnames react-transition-group
+
+opções de bibliotecas
+reactstrap - https://reactstrap.github.io/
+reactmaterialize - https://react-materialize.github.io/react-materialize/?path=/story/react-materialize--welcome

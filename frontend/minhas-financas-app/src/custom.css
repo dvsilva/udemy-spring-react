@@ -245,3 +245,7 @@ pre {
     text-align: center;
   }
 }
+
+.btn {
+  margin-right: 5px;
+}

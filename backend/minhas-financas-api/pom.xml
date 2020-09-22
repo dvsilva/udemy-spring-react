@@ -10,13 +10,13 @@
 	</parent>
 	
 	<groupId>com.dvsilva</groupId>
-	<artifactId>minhasfinancas</artifactId>
+	<artifactId>minhas-financas-api</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>minhas-financas</name>
 	<description>Projeto para gerenciemanto de finanças pessoais</description>
 
 	<properties>
-		<java.version>11</java.version>
+		<java.version>8</java.version>
 	</properties>
 
 	<dependencies>

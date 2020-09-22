@@ -59,6 +59,13 @@ public class LancamentoResource {
 		List<Lancamento> lancamentos = service.buscar(lancamentoFiltro);
 		return ResponseEntity.ok(lancamentos);
 	}
+	
+	@GetMapping("{id}")
+	public ResponseEntity obterLancamento(@PathVariable Long id) {
+		return service.obterPorId(id).map(lancamento -> {
+			return new ResponseEntity(converter(lancamento), HttpStatus.OK);
+		}).orElseGet(() -> new ResponseEntity("Lançamento não encontrado na base de dados.", HttpStatus.BAD_REQUEST));
+	}
 
 	@PostMapping
 	public ResponseEntity salvar(@RequestBody LancamentoDTO dto) {
@@ -112,6 +119,19 @@ public class LancamentoResource {
 				return ResponseEntity.badRequest().body(e.getMessage());
 			}
 		}).orElseGet(() -> new ResponseEntity("Lançamento não encontrado na base de dados.", HttpStatus.BAD_REQUEST));
+	}
+	
+	private LancamentoDTO converter(Lancamento lancamento) {
+		return LancamentoDTO.builder()
+				.id(lancamento.getId())
+				.descricao(lancamento.getDescricao())
+				.valor(lancamento.getValor())
+				.mes(lancamento.getMes())
+				.ano(lancamento.getAno())
+				.status(lancamento.getStatus().name())
+				.tipo(lancamento.getTipo().name())
+				.usuario(lancamento.getUsuario().getId())
+				.build();
 	}
 	
 	private Lancamento converter(LancamentoDTO dto) {

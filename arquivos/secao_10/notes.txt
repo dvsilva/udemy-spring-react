@@ -1,0 +1,28 @@
+links
+https://id.heroku.com/login
+https://www.pgadmin.org/download/
+
+Build da aplicação backend
+mvn clean package
+java -jar minhasfinancas-0.0.1-SNAPSHOT.jar
+
+Build da aplicação frontend
+adicionar no package.json ->  "homepage": "."
+rodar comando -> yarn build
+
+hospedagem no heroku
+xxx heroku login
+xxx heroku create dvsilva-minhas-financas-api
+xxx git push heroku master
+
+os abaixo funcionou
+cd my-project/
+git init
+heroku git:remote -a dvsilva-minhas-financas-api
+heroku git:remote -a dvsilva-minhas-financas-app
+git add .
+git commit -am "make it better"
+git push heroku master
+
+
+
