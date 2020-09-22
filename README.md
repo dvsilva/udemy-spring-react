@@ -6,8 +6,8 @@ Link: https://www.udemy.com/share/102a8mAEQdcFtQQng=/
 
 ## 💻 Projeto do curso
 
-Sistema de finanças pessoais com cadastro de Usuários e Lançamentos e autenticação simple. 
-Engloba uma API utilizando Spring Boot e uma aplicação cliente desenvolvida com React.
+Sistema de finanças pessoais com cadastro de Usuários e Lançamentos e autenticação simples. 
+Engloba uma API construída com Spring Boot e uma aplicação cliente desenvolvida com React.
 
 ## :camera: Demonstração
 
