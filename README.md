@@ -6,7 +6,7 @@ Link: https://www.udemy.com/share/102a8mAEQdcFtQQng=/
 
 ## 💻 Projeto do curso
 
-API de cadastro de Usuários e Lançamentos com autenticação simples.
+Sistema de cadastro de Usuários e Lançamentos com autenticação simples envolvendo o desenvolvimento de uma API e uma aplicação cliente.
 
 ## :camera: Demonstração
 
