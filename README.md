@@ -6,7 +6,8 @@ Link: https://www.udemy.com/share/102a8mAEQdcFtQQng=/
 
 ## 💻 Projeto do curso
 
-Sistema de cadastro de Usuários e Lançamentos com autenticação simples envolvendo o desenvolvimento de uma API e uma aplicação cliente.
+Sistema de finanças pessoais com cadastro de Usuários e Lançamentos e autenticação simple. 
+Engloba uma API utilizando Spring Boot e uma aplicação cliente desenvolvida com React.
 
 ## :camera: Demonstração
 
